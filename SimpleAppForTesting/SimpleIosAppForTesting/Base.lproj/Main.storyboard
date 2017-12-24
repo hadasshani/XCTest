@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleIosAppForTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-Ae-wQB" userLabel="inputText">
+                                <rect key="frame" x="20" y="200" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61U-w0-fha">
+                                <rect key="frame" x="20" y="100" width="335" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" label="textLabel"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQz-QS-WWF" userLabel="setClearTextButton">
+                                <rect key="frame" x="325" y="200" width="30" height="30"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="clearTestFieldText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4O1-hj-VkE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oy-b5-sTS" userLabel="setDefaultTextButton">
+                                <rect key="frame" x="286" y="330" width="109" height="30"/>
+                                <state key="normal" title="Set Default Text"/>
+                                <connections>
+                                    <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eac-zO-1m8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-ZG-QGL" userLabel="setNewTextButton">
+                                <rect key="frame" x="20" y="254" width="91" height="30"/>
+                                <state key="normal" title="Set New Text"/>
+                                <connections>
+                                    <action selector="setNewLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHC-dq-9sY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QHC-Ae-wQB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7cs-9a-YXK"/>
+                            <constraint firstItem="aQz-QS-WWF" firstAttribute="top" secondItem="QHC-Ae-wQB" secondAttribute="top" id="7zC-sF-Ut4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QHC-Ae-wQB" secondAttribute="trailing" constant="20" id="8rj-E9-fLo"/>
+                            <constraint firstItem="QDN-ZG-QGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nar-2w-15k"/>
+                            <constraint firstItem="aQz-QS-WWF" firstAttribute="height" secondItem="QHC-Ae-wQB" secondAttribute="height" id="Pyo-zj-N6F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQz-QS-WWF" secondAttribute="trailing" constant="20" id="Sh2-jK-nyz"/>
+                            <constraint firstItem="QHC-Ae-wQB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="X7N-Gv-oNy"/>
+                            <constraint firstItem="7Oy-b5-sTS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="YQf-x1-7tg"/>
+                            <constraint firstItem="7Oy-b5-sTS" firstAttribute="height" secondItem="QDN-ZG-QGL" secondAttribute="height" id="bgu-eg-2qv"/>
+                            <constraint firstItem="61U-w0-fha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cTl-vz-7U8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Oy-b5-sTS" secondAttribute="trailing" constant="20" id="eTK-gN-TSq"/>
+                            <constraint firstItem="QDN-ZG-QGL" firstAttribute="top" secondItem="QHC-Ae-wQB" secondAttribute="bottom" constant="100" id="oxj-bR-mfM"/>
+                            <constraint firstItem="7Oy-b5-sTS" firstAttribute="top" secondItem="QDN-ZG-QGL" secondAttribute="top" id="xMd-nW-FyM"/>
+                            <constraint firstItem="61U-w0-fha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="xz6-nF-V5D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="61U-w0-fha" secondAttribute="trailing" constant="20" id="yhQ-M0-Kog"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="somethingLabel" destination="61U-w0-fha" id="yKJ-0r-g2r"/>
+                        <outlet property="somethingTestField" destination="QHC-Ae-wQB" id="Ecv-cu-mvH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
